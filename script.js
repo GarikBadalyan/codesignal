@@ -1,16 +1,16 @@
 
-function vekt(year){
-  return Math.ceil(year/100)
+
+function polindrom(str) {
+  const len = Math.floor(str.length / 2);
+  for (let i = 0; i < len; i++)
+    if (str[i] !== str[str.length - i - 1]) {
+      return false;
+    }
+
+  return true;
 }
-console.log(vekt(2020))
-//1-101 = 1
-//101-200 = 2
-//201 - 300 = 3
-// ------
-// 332 / 100 = 3.32
 
-
-
+console.log( polindrom("anna"));
 
 
 
