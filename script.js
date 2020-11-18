@@ -1,19 +1,9 @@
 
 
 function polindrom(str) {
-  const len = Math.floor(str.length / 2);
-  for (let i = 0; i < len; i++)
-    if (str[i] !== str[str.length - i - 1]) {
-      return false;
-    }
-
-  return true;
+  return str == str.split("").reverse().join("");
 }
-
-console.log( polindrom("anna"));
-
-
-
+console.log(polindrom("asert"));
 
 
 
